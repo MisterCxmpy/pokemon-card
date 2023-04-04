@@ -4,24 +4,21 @@ export default function Button({setPokemon}) {
     const response = await fetch('https://pokeapi.co/api/v2/pokemon/');
     const data = await response.json();
 
-    const pokemonList = data.results.filter(
-      pokemon => pokemon.url !== 'https://pokeapi.co/api/v2/pokemon/10091/'
-    );
-
-    const totalPokemon = pokemonList.length;
+    const totalPokemon = data.count;
 
     const randomIndex = Math.floor(Math.random() * totalPokemon);
 
-    const randomPokemonUrl = pokemonList[randomIndex].url;
+    const randomPokemonUrl = `https://pokeapi.co/api/v2/pokemon/${randomIndex}`;
 
     const randomRes = await fetch(randomPokemonUrl);
-    const randomData = await randomRes.json();
 
-    if (!randomData.id || !randomData.name || !randomData.sprites.front_default) {
+    if (!randomRes.ok) {
       GetRandomPokemon();
-    } else {
-      setPokemon(randomData);
     }
+
+    const randomData = await randomRes.json();
+    
+    setPokemon(randomData);
   }
 
   return (

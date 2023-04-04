@@ -157,6 +157,15 @@
 .card.normal .card-info {
   background-color: #f0f0d8;
 }
+.card.rock {
+  background: rgb(187, 168, 133);
+}
+.card.rock .card-picture {
+  background: linear-gradient(127deg, rgb(204, 189, 157), rgb(242, 234, 209));
+}
+.card.rock .card-info {
+  background: rgb(219, 210, 183);
+}
 
 .card-picture {
   width: 100%;
