@@ -11,15 +11,19 @@ export default function Search({setPokemon}) {
   async function GetPokemon(pokemon) {
     const api = `https://pokeapi.co/api/v2/pokemon/${pokemon}`
 
-    const response = await fetch(api)
-    const data = await response.json()
-    setPokemon(data)
+    try {
+      const response = await fetch(api)
+      const data = await response.json()
+      setPokemon(data)
+    } catch (e) {
+      console.log(e)
+    }
   }
 
   function GetName(e) {
     e.preventDefault()
     setPokemonName(inputField)
-    GetPokemon(pokemonName)
+    GetPokemon(inputField)
   }
 
   return (

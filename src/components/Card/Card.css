@@ -1,0 +1,79 @@
+.card {
+  width: 300px;
+  height: 450px;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 0 10px black;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.card.electric {
+  background: rgb(207, 207, 0);
+}
+.card.electric .card-picture {
+  background: linear-gradient(127deg, rgb(133, 113, 0), rgb(201, 171, 0));
+}
+.card.electric .card-info {
+  background: rgb(248, 250, 178);
+}
+.card.fire {
+  background: rgb(207, 59, 0);
+}
+.card.fire .card-picture {
+  background: linear-gradient(127deg, rgb(75, 17, 0), rgb(136, 39, 0));
+}
+.card.fire .card-info {
+  background: rgb(250, 178, 178);
+}
+.card.water {
+  background: rgb(19, 151, 228);
+}
+.card.water .card-picture {
+  background: linear-gradient(127deg, rgb(0, 95, 119), rgb(0, 145, 202));
+}
+.card.water .card-info {
+  background: rgb(178, 224, 250);
+}
+.card.grass {
+  background: rgb(15, 165, 28);
+}
+.card.grass .card-picture {
+  background: linear-gradient(127deg, rgb(0, 119, 46), rgb(0, 202, 91));
+}
+.card.grass .card-info {
+  background: rgb(178, 250, 196);
+}
+
+.card-picture {
+  width: 100%;
+  height: 200px;
+  padding: 2px;
+  box-sizing: border-box;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.card-picture img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.card-info {
+  height: 100%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.card-name {
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 20px;
+}/*# sourceMappingURL=Card.css.map */
