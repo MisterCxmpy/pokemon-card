@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import Card from "./components/Card/Card";
-import Search from "./components/Search";
+import Search from "./components/Search/Search";
+import Button from "./components/Button/Button";
 import "./App.css";
 
 function App() {
@@ -30,9 +31,11 @@ function App() {
   return (
     <div>
       <header>
+        <h1>Wicked Pokemon Card App</h1>
         <Search setPokemon={setPokemon} />
       </header>
       {loading ? <p>Loading...</p> : <Card pokemon={pokemon} />}
+      <Button setPokemon={setPokemon}/>
     </div>
   );
 }

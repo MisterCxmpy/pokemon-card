@@ -23,7 +23,6 @@ export default function Card({pokemon}) {
       <div className="card-info">
         <p className="card-name">{pokemon.name}</p>
         <ul className="stats">
-          {console.log(pokemon)}
           <li className="stat">HP: {pokemon.stats[0].base_stat}</li>
           <li className="stat">Attack: {pokemon.stats[1].base_stat}</li>
           <li className="stat">Defense: {pokemon.stats[2].base_stat}</li>

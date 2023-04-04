@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap");
+
+* {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: rgb(54, 54, 54);
+}

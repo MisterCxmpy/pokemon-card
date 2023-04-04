@@ -3,4 +3,19 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  color: white;
+}
+
+button#random {
+  width: 150px;
+  height: 50px;
+  margin: auto;
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+  right: 0;
 }

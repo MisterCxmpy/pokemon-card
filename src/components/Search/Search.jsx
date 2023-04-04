@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import "./Search.css"
 
 export default function Search({setPokemon}) {
   const [inputField, setInputField] = useState("")
@@ -28,7 +29,7 @@ export default function Search({setPokemon}) {
 
   return (
     <form onSubmit={GetName}>
-      <input value={inputField} type="text" onChange={handleInput}/>
+      <input value={inputField} type="text" placeholder="Enter the name of a Pokemon" onChange={handleInput}/>
       <button type="submit">Search</button>
     </form>
   )

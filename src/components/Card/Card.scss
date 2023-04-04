@@ -8,45 +8,168 @@
   flex-direction: column;
   margin: auto;
   position: absolute;
-  top: 0; bottom: 0; left: 0; right: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 
-  &.electric {
-    background: rgb(207, 207, 0);
+  &.bug {
+    background-color: #a8b820;
     .card-picture {
-      background: linear-gradient(127deg, rgb(133, 113, 0), rgb(201, 171, 0));
+      background: linear-gradient(127deg, #c8d68f, #a8b820);
     }
-    .card-info{
-      background: rgb(248, 250, 178);
-    }
-  }
-
-  &.fire {
-    background: rgb(207, 59, 0);
-    .card-picture {
-      background: linear-gradient(127deg, rgb(75, 17, 0), rgb(136, 39, 0));
-    }
-    .card-info{
-      background: rgb(250, 178, 178);
+    .card-info {
+      background-color: #d8e0a0;
     }
   }
   
-  &.water {
-    background: rgb(19, 151, 228);
+  &.dark {
+    background-color: #705848;
     .card-picture {
-      background: linear-gradient(127deg, rgb(0, 95, 119), rgb(0, 145, 202));
+      background: linear-gradient(127deg, #a89078, #705848);
     }
-    .card-info{
-      background: rgb(178, 224, 250);
+    .card-info {
+      background-color: #c0b090;
+    }
+  }
+  
+  &.dragon {
+    background-color: #7038f8;
+    .card-picture {
+      background: linear-gradient(127deg, #a890f0, #7038f8);
+    }
+    .card-info {
+      background-color: #c8b8f8;
+    }
+  }
+  
+  &.electric {
+    background-color: #f8d030;
+    .card-picture {
+      background: linear-gradient(127deg, #f8e0a8, #f8d030);
+    }
+    .card-info {
+      background-color: #f8e8a8;
+    }
+  }
+  
+  &.fairy {
+    background-color: #ee99ac;
+    .card-picture {
+      background: linear-gradient(127deg, #f8c8e8, #ee99ac);
+    }
+    .card-info {
+      background-color: #f8d8e0;
+    }
+  }
+  
+  &.fighting {
+    background-color: #c03028;
+    .card-picture {
+      background: linear-gradient(127deg, #d87c6e, #c03028);
+    }
+    .card-info {
+      background-color: #f0d0c0;
+    }
+  }
+  
+  &.fire {
+    background-color: #f08030;
+    .card-picture {
+      background: linear-gradient(127deg, #f8b88b, #f08030);
+    }
+    .card-info {
+      background-color: #f8d0a0;
+    }
+  }
+  
+  &.flying {
+    background-color: #a890f0;
+    .card-picture {
+      background: linear-gradient(127deg, #c8b8f8, #a890f0);
+    }
+    .card-info {
+      background-color: #d8d8f0;
+    }
+  }
+  
+  &.ghost {
+    background-color: #705898;
+    .card-picture {
+      background: linear-gradient(127deg, #a890b8, #705898);
+    }
+    .card-info {
+      background-color: #c0a8d0;
     }
   }
   
   &.grass {
-    background: rgb(15, 165, 28);
+    background-color: #78c850;
     .card-picture {
-      background: linear-gradient(127deg, rgb(0, 119, 46), rgb(0, 202, 91));
+      background: linear-gradient(127deg, #a8e0a0, #78c850);
     }
-    .card-info{
-      background: rgb(178, 250, 196);
+    .card-info {
+      background-color: #c8e0c8;
+    }
+  }
+  
+  &.ground {
+    background-color: #e0c068;
+    .card-picture {
+      background: linear-gradient(127deg, #f0d8a0, #e0c068);
+    }
+    .card-info {
+      background-color: #f0e0b0;
+    }
+  }
+
+  &.ice {
+    background: rgb(155, 209, 230);
+    .card-picture {
+      background: linear-gradient(127deg, rgb(170, 232, 253), rgb(230, 253, 255));
+    }
+    .card-info {
+      background: rgb(204, 241, 255);
+    }
+  }
+
+  &.steel {
+    background: rgb(184, 184, 208);
+    .card-picture {
+      background: linear-gradient(127deg, rgb(208, 208, 231), rgb(237, 237, 247));
+    }
+    .card-info {
+      background: rgb(230, 230, 255);
+    }
+  }
+
+  &.water {
+    background: rgb(107, 181, 240);
+    .card-picture {
+      background: linear-gradient(127deg, rgb(116, 205, 253), rgb(177, 234, 255));
+    }
+    .card-info {
+      background: rgb(202, 231, 250);
+    }
+  }
+
+  &.psychic {
+    background: rgb(125, 69, 199);
+    .card-picture {
+      background: linear-gradient(127deg, rgb(140, 85, 176), rgb(176, 128, 208));
+    }
+    .card-info {
+      background: rgb(224, 176, 248);
+    }
+  }
+
+  &.normal {
+    background-color: #d8d8c0;
+    .card-picture {
+      background: linear-gradient(127deg, #e0e0a8, #d8d8c0);
+    }
+    .card-info {
+      background-color: #f0f0d8;
     }
   }
 }
