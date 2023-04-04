@@ -13,158 +13,165 @@
   left: 0;
   right: 0;
 }
-.card.bug {
-  background-color: #a8b820;
+
+.bug {
+  background: #a8b820;
 }
-.card.bug .card-picture {
+.bug .card-picture {
   background: linear-gradient(127deg, #c8d68f, #a8b820);
 }
-.card.bug .card-info {
-  background-color: #d8e0a0;
+.bug .card-info {
+  background: #d8e0a0;
 }
-.card.dark {
-  background-color: #705848;
+
+.dark {
+  background: #705848;
 }
-.card.dark .card-picture {
+.dark .card-picture {
   background: linear-gradient(127deg, #a89078, #705848);
 }
-.card.dark .card-info {
-  background-color: #c0b090;
+.dark .card-info {
+  background: #c0b090;
 }
-.card.dragon {
-  background-color: #7038f8;
+
+.dragon {
+  background: #7038f8;
 }
-.card.dragon .card-picture {
+.dragon .card-picture {
   background: linear-gradient(127deg, #a890f0, #7038f8);
 }
-.card.dragon .card-info {
-  background-color: #c8b8f8;
+.dragon .card-info {
+  background: #c8b8f8;
 }
-.card.electric {
-  background-color: #f8d030;
+
+.electric {
+  background: #f8d030;
 }
-.card.electric .card-picture {
+.electric .card-picture {
   background: linear-gradient(127deg, #f8e0a8, #f8d030);
 }
-.card.electric .card-info {
-  background-color: #f8e8a8;
+.electric .card-info {
+  background: #f8e8a8;
 }
-.card.fairy {
-  background-color: #ee99ac;
+
+.fairy {
+  background: #ee99ac;
 }
-.card.fairy .card-picture {
+.fairy .card-picture {
   background: linear-gradient(127deg, #f8c8e8, #ee99ac);
 }
-.card.fairy .card-info {
-  background-color: #f8d8e0;
+.fairy .card-info {
+  background: #f8d8e0;
 }
-.card.fighting {
-  background-color: #c03028;
+
+.fighting {
+  background: #c03028;
 }
-.card.fighting .card-picture {
+.fighting .card-picture {
   background: linear-gradient(127deg, #d87c6e, #c03028);
 }
-.card.fighting .card-info {
-  background-color: #f0d0c0;
+.fighting .card-info {
+  background: #f0d0c0;
 }
-.card.fire {
-  background-color: #f08030;
+
+.fire {
+  background: #f08030;
 }
-.card.fire .card-picture {
+.fire .card-picture {
   background: linear-gradient(127deg, #f8b88b, #f08030);
 }
-.card.fire .card-info {
-  background-color: #f8d0a0;
+.fire .card-info {
+  background: #f8d0a0;
 }
-.card.flying {
-  background-color: #a890f0;
+
+.flying {
+  background: #a890f0;
 }
-.card.flying .card-picture {
+.flying .card-picture {
   background: linear-gradient(127deg, #c8b8f8, #a890f0);
 }
-.card.flying .card-info {
-  background-color: #d8d8f0;
+.flying .card-info {
+  background: #d8d8f0;
 }
-.card.ghost {
-  background-color: #705898;
+
+.ghost {
+  background: #705898;
 }
-.card.ghost .card-picture {
+.ghost .card-picture {
   background: linear-gradient(127deg, #a890b8, #705898);
 }
-.card.ghost .card-info {
-  background-color: #c0a8d0;
+.ghost .card-info {
+  background: #c0a8d0;
 }
-.card.grass {
-  background-color: #78c850;
+
+.grass {
+  background: #78c850;
 }
-.card.grass .card-picture {
+.grass .card-picture {
   background: linear-gradient(127deg, #a8e0a0, #78c850);
 }
-.card.grass .card-info {
-  background-color: #c8e0c8;
+.grass .card-info {
+  background: #c8e0c8;
 }
-.card.ground {
-  background-color: #e0c068;
+
+.ground {
+  background: #e0c068;
 }
-.card.ground .card-picture {
+.ground .card-picture {
   background: linear-gradient(127deg, #f0d8a0, #e0c068);
 }
-.card.ground .card-info {
-  background-color: #f0e0b0;
+.ground .card-info {
+  background: #f0e0b0;
 }
-.card.ice {
+
+.ice {
   background: rgb(155, 209, 230);
 }
-.card.ice .card-picture {
+.ice .card-picture {
   background: linear-gradient(127deg, rgb(170, 232, 253), rgb(230, 253, 255));
 }
-.card.ice .card-info {
+.ice .card-info {
   background: rgb(204, 241, 255);
 }
-.card.steel {
+
+.steel {
   background: rgb(184, 184, 208);
 }
-.card.steel .card-picture {
+.steel .card-picture {
   background: linear-gradient(127deg, rgb(208, 208, 231), rgb(237, 237, 247));
 }
-.card.steel .card-info {
+.steel .card-info {
   background: rgb(230, 230, 255);
 }
-.card.water {
+
+.water {
   background: rgb(107, 181, 240);
 }
-.card.water .card-picture {
+.water .card-picture {
   background: linear-gradient(127deg, rgb(116, 205, 253), rgb(177, 234, 255));
 }
-.card.water .card-info {
+.water .card-info {
   background: rgb(202, 231, 250);
 }
-.card.psychic {
+
+.psychic {
   background: rgb(125, 69, 199);
 }
-.card.psychic .card-picture {
+.psychic .card-picture {
   background: linear-gradient(127deg, rgb(140, 85, 176), rgb(176, 128, 208));
 }
-.card.psychic .card-info {
+.psychic .card-info {
   background: rgb(224, 176, 248);
 }
-.card.normal {
-  background-color: #d8d8c0;
+
+.normal {
+  background: #d8d8c0;
 }
-.card.normal .card-picture {
+.normal .card-picture {
   background: linear-gradient(127deg, #e0e0a8, #d8d8c0);
 }
-.card.normal .card-info {
-  background-color: #f0f0d8;
-}
-.card.rock {
-  background: rgb(187, 168, 133);
-}
-.card.rock .card-picture {
-  background: linear-gradient(127deg, rgb(204, 189, 157), rgb(242, 234, 209));
-}
-.card.rock .card-info {
-  background: rgb(219, 210, 183);
+.normal .card-info {
+  background: #f0f0d8;
 }
 
 .card-picture {
