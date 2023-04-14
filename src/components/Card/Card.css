@@ -7,11 +7,6 @@
   display: flex;
   flex-direction: column;
   margin: auto;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
 }
 
 .bug {
@@ -184,13 +179,13 @@
   background: rgb(219, 210, 183);
 }
 
-.posion {
+.poison {
   background: #A040A0;
 }
-.posion .card-picture {
+.poison .card-picture {
   background: linear-gradient(127deg, #C183C1, #A040A0);
 }
-.posion .card-info {
+.poison .card-info {
   background: #D9B3D9;
 }
 

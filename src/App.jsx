@@ -1,41 +1,19 @@
-import { useState, useEffect } from "react";
-import Card from "./components/Card/Card";
-import Search from "./components/Search/Search";
-import Button from "./components/Button/Button";
 import "./App.css";
+import Layout from "./components/Layout";
+import { AllPokemon, Home } from "./pages";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
-  const [pokemon, setPokemon] = useState([]);
-  const [loading, setLoading] = useState(true);
 
-  async function GetPokemon() {
-    const api = `https://pokeapi.co/api/v2/pokemon/pikachu`;
-
-    setLoading(true);
-
-    try {
-      const response = await fetch(api);
-      const data = await response.json();
-      setPokemon(data);
-      setLoading(false);
-    } catch (e) {
-      console.log(e);
-      setLoading(false);
-    }
-  }
-
-  useEffect(() => {
-    GetPokemon();
-  }, []);
 
   return (
-    <div>
-      <header>
-        <h1>Wicked Pokemon Card App</h1>
-        <Search setPokemon={setPokemon} />
-      </header>
-      {loading ? <p>Loading...</p> : <Card pokemon={pokemon} />}
-      <Button setPokemon={setPokemon}/>
+    <div className="container">
+      <Routes>
+        <Route path='/' element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path='/all' element={<AllPokemon />} />
+        </Route>
+      </Routes>
     </div>
   );
 }

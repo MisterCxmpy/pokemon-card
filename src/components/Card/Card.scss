@@ -7,11 +7,7 @@
   display: flex;
   flex-direction: column;
   margin: auto;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+ 
 }
 
 $card-colors: (
@@ -32,7 +28,7 @@ $card-colors: (
   psychic: (rgb(125, 69, 199), linear-gradient(127deg, rgb(140, 85, 176), rgb(176, 128, 208)), rgb(224, 176, 248)),
   normal: (#d8d8c0, linear-gradient(127deg, #e0e0a8, #d8d8c0), #f0f0d8),
   rock: (rgb(187, 168, 133), linear-gradient(127deg, rgb(204, 189, 157), rgb(242, 234, 209)), rgb(219, 210, 183)),
-  posion: (#A040A0, linear-gradient(127deg, #C183C1, #A040A0), #D9B3D9)
+  poison: (#A040A0, linear-gradient(127deg, #C183C1, #A040A0), #D9B3D9)
 );
 
 @each $type, $colors in $card-colors {
