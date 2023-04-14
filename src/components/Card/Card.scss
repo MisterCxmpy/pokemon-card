@@ -22,13 +22,15 @@ $card-colors: (
   ghost: (#705898, linear-gradient(127deg, #a890b8, #705898), #c0a8d0),
   grass: (#78c850, linear-gradient(127deg, #a8e0a0, #78c850), #c8e0c8),
   ground: (#e0c068, linear-gradient(127deg, #f0d8a0, #e0c068), #f0e0b0),
-  ice: (rgb(155, 209, 230), linear-gradient(127deg, rgb(170, 232, 253), rgb(230, 253, 255)), rgb(204, 241, 255)),
-  steel: (rgb(184, 184, 208), linear-gradient(127deg, rgb(208, 208, 231), rgb(237, 237, 247)), rgb(230, 230, 255)),
-  water: (rgb(107, 181, 240), linear-gradient(127deg, rgb(116, 205, 253), rgb(177, 234, 255)), rgb(202, 231, 250)),
-  psychic: (rgb(125, 69, 199), linear-gradient(127deg, rgb(140, 85, 176), rgb(176, 128, 208)), rgb(224, 176, 248)),
+  ice: (#9bd1e6, linear-gradient(127deg, #aae8fd, #e6fdff), #ccf1ff),
+  steel: (#b8b8d0, linear-gradient(127deg, #d0d0e7, #ededf7), #e6e6ff),
+  water: (#6bb5f0, linear-gradient(127deg, #74cdfd, #b1eaff), #cae7fa),
+  psychic: (#7d45c7, linear-gradient(127deg, #8c55b0, #b080d0), #e0b0f8),
   normal: (#d8d8c0, linear-gradient(127deg, #e0e0a8, #d8d8c0), #f0f0d8),
-  rock: (rgb(187, 168, 133), linear-gradient(127deg, rgb(204, 189, 157), rgb(242, 234, 209)), rgb(219, 210, 183)),
-  poison: (#A040A0, linear-gradient(127deg, #C183C1, #A040A0), #D9B3D9)
+  rock: (#bba885, linear-gradient(127deg, #ccbd9d, #f2ead1), #dbd2b7),
+  poison: (#A040A0, linear-gradient(127deg, #C183C1, #A040A0), #D9B3D9),
+  shadow: (#494949, linear-gradient(127deg, #727272, #494949), #727272),
+  unknown: (#68A090, linear-gradient(127deg, #9DBAA4, #68A090), #A4C4B7)
 );
 
 @each $type, $colors in $card-colors {
@@ -69,4 +71,20 @@ $card-colors: (
   text-align: center;
   padding: 15px 0;
   font-size: 20px;
+}
+
+.refresh-card {
+  animation: refresh 1s ease-in-out forwards;
+}
+
+@keyframes refresh {
+  0% {
+    transform: translateY(0) rotateY(0) scaleX(1) scaleY(1);
+  }
+  50% {
+    transform: translateY(-50px) rotateY(360deg) scaleX(0.5) scaleY(0.7);
+  }
+  100% {
+    transform: translateY(0) rotateY(360deg) scaleX(1) scaleY(1);
+  }
 }

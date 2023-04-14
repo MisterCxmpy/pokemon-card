@@ -120,43 +120,43 @@
 }
 
 .ice {
-  background: rgb(155, 209, 230);
+  background: #9bd1e6;
 }
 .ice .card-picture {
-  background: linear-gradient(127deg, rgb(170, 232, 253), rgb(230, 253, 255));
+  background: linear-gradient(127deg, #aae8fd, #e6fdff);
 }
 .ice .card-info {
-  background: rgb(204, 241, 255);
+  background: #ccf1ff;
 }
 
 .steel {
-  background: rgb(184, 184, 208);
+  background: #b8b8d0;
 }
 .steel .card-picture {
-  background: linear-gradient(127deg, rgb(208, 208, 231), rgb(237, 237, 247));
+  background: linear-gradient(127deg, #d0d0e7, #ededf7);
 }
 .steel .card-info {
-  background: rgb(230, 230, 255);
+  background: #e6e6ff;
 }
 
 .water {
-  background: rgb(107, 181, 240);
+  background: #6bb5f0;
 }
 .water .card-picture {
-  background: linear-gradient(127deg, rgb(116, 205, 253), rgb(177, 234, 255));
+  background: linear-gradient(127deg, #74cdfd, #b1eaff);
 }
 .water .card-info {
-  background: rgb(202, 231, 250);
+  background: #cae7fa;
 }
 
 .psychic {
-  background: rgb(125, 69, 199);
+  background: #7d45c7;
 }
 .psychic .card-picture {
-  background: linear-gradient(127deg, rgb(140, 85, 176), rgb(176, 128, 208));
+  background: linear-gradient(127deg, #8c55b0, #b080d0);
 }
 .psychic .card-info {
-  background: rgb(224, 176, 248);
+  background: #e0b0f8;
 }
 
 .normal {
@@ -170,13 +170,13 @@
 }
 
 .rock {
-  background: rgb(187, 168, 133);
+  background: #bba885;
 }
 .rock .card-picture {
-  background: linear-gradient(127deg, rgb(204, 189, 157), rgb(242, 234, 209));
+  background: linear-gradient(127deg, #ccbd9d, #f2ead1);
 }
 .rock .card-info {
-  background: rgb(219, 210, 183);
+  background: #dbd2b7;
 }
 
 .poison {
@@ -187,6 +187,26 @@
 }
 .poison .card-info {
   background: #D9B3D9;
+}
+
+.shadow {
+  background: #494949;
+}
+.shadow .card-picture {
+  background: linear-gradient(127deg, #727272, #494949);
+}
+.shadow .card-info {
+  background: #727272;
+}
+
+.unknown {
+  background: #68A090;
+}
+.unknown .card-picture {
+  background: linear-gradient(127deg, #9DBAA4, #68A090);
+}
+.unknown .card-info {
+  background: #A4C4B7;
 }
 
 .card-picture {
@@ -215,4 +235,20 @@
   text-align: center;
   padding: 15px 0;
   font-size: 20px;
+}
+
+.refresh-card {
+  animation: refresh 1s ease-in-out forwards;
+}
+
+@keyframes refresh {
+  0% {
+    transform: translateY(0) rotateY(0) scaleX(1) scaleY(1);
+  }
+  50% {
+    transform: translateY(-50px) rotateY(360deg) scaleX(0.5) scaleY(0.7);
+  }
+  100% {
+    transform: translateY(0) rotateY(360deg) scaleX(1) scaleY(1);
+  }
 }/*# sourceMappingURL=Card.css.map */
