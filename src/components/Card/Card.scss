@@ -32,7 +32,7 @@ $card-colors: (
   psychic: (rgb(125, 69, 199), linear-gradient(127deg, rgb(140, 85, 176), rgb(176, 128, 208)), rgb(224, 176, 248)),
   normal: (#d8d8c0, linear-gradient(127deg, #e0e0a8, #d8d8c0), #f0f0d8),
   rock: (rgb(187, 168, 133), linear-gradient(127deg, rgb(204, 189, 157), rgb(242, 234, 209)), rgb(219, 210, 183)),
-  posion: (#A040A0, linear-gradient(127deg, #C183C1, #A040A0), #D9B3D9)
+  poison: (#A040A0, linear-gradient(127deg, #C183C1, #A040A0), #D9B3D9)
 );
 
 @each $type, $colors in $card-colors {
@@ -73,4 +73,20 @@ $card-colors: (
   text-align: center;
   padding: 15px 0;
   font-size: 20px;
+}
+
+.refresh-card {
+  animation: refresh 1s ease-in-out forwards;
+}
+
+@keyframes refresh {
+  0% {
+    transform: translateY(0) rotateY(0) scaleX(1) scaleY(1);
+  }
+  50% {
+    transform: translateY(-50px) rotateY(360deg) scaleX(0.5) scaleY(0.7);
+  }
+  100% {
+    transform: translateY(0) rotateY(360deg) scaleX(1) scaleY(1);
+  }
 }

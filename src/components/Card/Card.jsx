@@ -1,9 +1,11 @@
 import "./Card.css"
 import VanillaTilt from 'vanilla-tilt';
 import { useEffect, useRef } from 'react';
+import { useRefresh } from "../context/RefreshContext";
 
 export default function Card({pokemon}) {
   const cardRef = useRef(null);
+  const { refresh, setRefresh } = useRefresh()
 
   useEffect(() => {
     VanillaTilt.init(cardRef.current, {
@@ -15,8 +17,18 @@ export default function Card({pokemon}) {
     });
   }, []);
 
+  useEffect(() => {
+    console.log(refresh)
+    if (refresh) {
+      const timeout = setTimeout(() => {
+        setRefresh(false);
+      }, 1000);
+      return () => clearTimeout(timeout);
+    }
+  }, [refresh]);
+
   return (
-    <div className={`card ${pokemon.types[0].type.name}`} ref={cardRef}>
+    <div className={`card ${pokemon.types[0].type.name} ${refresh ? 'refresh-card' : ''}`} ref={cardRef}>
       <div className="card-picture">
         <img src={pokemon.sprites.other["official-artwork"].front_default}/>
       </div>
