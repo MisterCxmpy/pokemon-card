@@ -1,0 +1,21 @@
+.filters-list {
+    display: flex;
+    color: white;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+    margin: 32px 0;
+    flex-wrap: wrap;
+}
+
+.type {
+    padding: 6px 12px;
+    background-color: rgba(225, 187, 191, 0.738);
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+
+.type.active {
+    background-color: rgba(173, 198, 80, 0.516);
+}

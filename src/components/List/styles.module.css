@@ -1,0 +1,6 @@
+.item-list {
+    color: white;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+}
